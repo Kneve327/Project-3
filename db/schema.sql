@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS statement_db;
+CREATE DATABASE statement_db;
