@@ -3,6 +3,8 @@ var express = require('express');
 var session = require('express-session');
 var passport = require('./config/passport');
 const routes = require('./routes');
+
+
 // require("dot-env");
 var db = require('./models');
 
@@ -35,6 +37,7 @@ var syncOptions = { force: false };
 if (process.env.NODE_ENV === "development") {
   syncOptions.force = true;
 }
+
 
 // Starting the server, syncing our models ------------------------------------/
 db.sequelize.sync(syncOptions).then(function() {
