@@ -3,17 +3,23 @@ import axios from "axios";
 export default {
 
   saveUsers: function(userData) {
-    console.log(userData);
+    // console.log(userData);
     return axios.post("/api/signup", userData);
     
   },
   // Gets all books
   getUser: function(userData) {
-    console.log(userData)
+    // console.log(userData)
     return axios.get("/api/myprofile/" + userData);
   },
-
-  
+  saveSubmitions: function(userData) {
+    // console.log(userData)
+    return axios.post("/api/home", userData);
+  },
+  getSubmitions: function(userData) {
+    // console.log(userData)
+    return axios.get("/api/home", userData);
+  }
   // // Gets the book with the given id
   // getBook: function(id) {
   //   return axios.get("/api/books/" + id);

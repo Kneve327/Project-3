@@ -1,17 +1,9 @@
 module.exports = function(sequelize, DataTypes) {
   var Post = sequelize.define("Post", {
-    post_header: {
+    
+    submition: {
       type: DataTypes.STRING,
       allowNull: false
-    },
-    post_body: {
-      type: DataTypes.TEXT,
-      allowNull: false
-    },
-
-    giphy_URL: {
-      type: DataTypes.STRING,
-      allowNull: true
     }
     // createdAt: {
     //   type: DataTypes.DATE,

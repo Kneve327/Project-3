@@ -1,4 +1,76 @@
 .myprofForm {
     width: 50%;
     height: 30px;
+    margin-left: 25%;
+    background-color: whitesmoke;
+    border: none;
+}
+#firstFormLabel {
+    padding-top: 35px;
+}
+.formLabel {
+    margin-left: 25%;
+    padding-top: 20px;
+}
+.signupCardContainer {
+    margin-top: -90px;
+    margin-left: 25%;
+    /* margin-right: 33.3%; */
+    width: 50%;
+    margin-bottom: 60px;
+}
+#submit-su-button {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 45%;
+}
+#fn-input {
+    padding-top: 80px;
+}
+#ln-input {
+    padding-top: 80px;
+}
+.card-title {
+    text-align: center;
+}
+.divBod {
+    background-image: url(/images/image3.jpg);
+    /* background-size: 50%; */
+    background-repeat: repeat-x;
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+#littleBox {
+    /* margin: -10px; */
+    z-index: 3;
+    background-color: rgb(179, 177, 177);
+    width: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-left: 40%;
+}
+.profileDiv {
+    background-image: url(/images/image3.jpg);
+    background-size: 100%;
+    height: 270px;
+}
+.profileHeader {
+    /* z-index: -1; */
+    /* margin-top: 150px; */
+    background-color: black;
+    height: 400px;
+    margin-top: -260px;
+}
+.profileContainer {
+    background-color: rgb(179, 177, 177);
+    margin-left: 12%;
+    height: 400px;
+    width: 75%;
+    /* border-radius: 10px; */
+    position: sticky;
+    z-index: 10;
+    margin-top: 35px;
+
+    /* border-top: -100px; */
 }

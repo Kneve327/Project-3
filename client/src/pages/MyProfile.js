@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import API from "../utils/API"
 import TopNav from "../components/TopNav"
+import FooterBlank from "../components/FooterBlank"
 import "./style.css";
 
 
@@ -30,20 +31,16 @@ class MyProfile extends Component {
           .catch(err => console.log(err));
     };
 
-
-    
-
     render () {
         console.log(this.state);
         return (
-            <div>
-
-                <TopNav />
-
-                <p>DIS MY PROFILE PAGEEEEE</p>
-
-               
+            <div className="profileDiv">
                 
+                <TopNav />
+                
+
+                <div className="profileContainer">
+
                 <p className="formLabel" id="firstFormLabel">First Name</p>
                 <button id="fnButton" className="myprofForm" name="first_name" >{this.state.user.first_name}</button>
                 <p className="formLabel" id="secondFormLabel">Last Name</p>
@@ -53,7 +50,10 @@ class MyProfile extends Component {
                 <p className="formLabel" id="fourthFormLabel">Email</p>
                 <button id="emailButton" className="myprofForm" name="email" >{this.state.user.email}</button>
                 
-               
+                </div>
+                <div className="profileHeader">
+                </div>
+                <FooterBlank />
             </div>
         )
     }

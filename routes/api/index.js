@@ -1,15 +1,18 @@
 const router = require("express").Router();
-const controller = require("../../controllers/controller");
+const userController = require("../../controllers/userController")
+const postController = require("../../controllers/postController");
 
 router.route("/signup")
-.post(controller.create);
+.post(userController.create);
 
 router.route("/myprofile/:id?")
-.get(controller.findById)
+.get(userController.findById);
+
+router.route("/home")
+.get(postController.findAll)
+.post(postController.create);
 
 module.exports = router;
-
-
 
 
 // // Matches with "/api/books"

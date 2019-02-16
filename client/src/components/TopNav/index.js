@@ -7,11 +7,11 @@ class TopNav extends React.Component {
             <div>
 
 
-                <nav id="topnav" className="navbar">
+                <wrapper id="topnav" className="navbar">
 
-                <a href="/myprofile/1"><i id="profilePicture" className="fas fa-user icon-cog"></i></a>
+                <a href="/myprofile/1"><i id="profilePicture" className="faButton fas fa-user icon-cog"></i></a>
 
-                <a id="title" className="navbar-brand" href="#">STATEMENT</a>
+                <p id="title" className="navbar-brand">STATEMENT</p>
 
                 <div className="d-flex justify-content-end">
                 <a href="/Home"><i id="home" className="faButton fas fa-home icon-cog"></i></a>
@@ -23,7 +23,7 @@ class TopNav extends React.Component {
 
                 </div>
 
-                </nav>
+                </wrapper>
 
 
             </div>
