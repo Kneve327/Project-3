@@ -12,6 +12,9 @@ router.route("/home")
 .get(postController.findAll)
 .post(postController.create);
 
+router.route("/login")
+.post(userController.login);
+
 module.exports = router;
 
 

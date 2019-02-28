@@ -2,16 +2,17 @@
     margin-top: 50px;
 }
 .listContainer {
-    border: 2px solid black;
-    margin-top: 50px;
+    border: 50px solid black;
+    /* margin-top: 50px; */
     background-color: gray;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
 .individualPost {
-    background-color: white;
+    background-color: black;
     width: 35%;
+    margin-left: 19%;
 }
 
 .commentStyling {

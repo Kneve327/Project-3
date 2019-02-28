@@ -7,7 +7,7 @@ class TopNav extends React.Component {
             <div>
 
 
-                <wrapper id="topnav" className="navbar">
+                <div id="topnav" className="navbar">
 
                 <a href="/myprofile/1"><i id="profilePicture" className="faButton fas fa-user icon-cog"></i></a>
 
@@ -18,12 +18,12 @@ class TopNav extends React.Component {
                 <a href="/"><i id="search" className="faButton fas fa-search icon-cog"></i></a>
                 {/* <a href="/"><i id="notifications" className="faButton fas fa-bolt icon-cog"></i></a> */}
 
-                <div id="fa-plus"><a href="#" className="faButton fas fa-plus icon-cog"></a></div>
+                <div id="fa-plus"><i className="faButton fas fa-plus icon-cog"></i></div>
 
 
                 </div>
 
-                </wrapper>
+                </div>
 
 
             </div>

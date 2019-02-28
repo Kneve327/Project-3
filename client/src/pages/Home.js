@@ -1,22 +1,26 @@
 import React, {Component} from "react";
-import TopNav from "../components/TopNav";
+// import TopNav from "../components/TopNav";
 import InputBox from "../components/InputBox";
-import PostContainer from"../components/PostContainer";
+import PostContainer from "../components/PostContainer";
+// import FooterBlank from "../components/FooterBlank"
 
 
 class Home extends Component {
 
     render () {
         return (
-            <div>
+            <div id="homeDiv">
 
-            <TopNav />
+            {/* <TopNav /> */}
 
             <InputBox /> 
 
-            <PostContainer />        
+            <PostContainer />
+
+            {/* <FooterBlank />         */}
     
             </div>
+
         )
     }
 }

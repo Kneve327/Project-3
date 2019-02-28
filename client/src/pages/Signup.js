@@ -1,7 +1,9 @@
 import React, {Component} from "react";
 import API from "../utils/API";
-import TopNav from "../components/TopNav";
+// import TopNav from "../components/TopNav";
+import TopNavBlank from "../components/TopNavBlank"
 import FooterBlank from "../components/FooterBlank";
+import "./style.css";
 
 
 
@@ -45,7 +47,8 @@ class Signup extends Component {
     render () {
         return (
             <div className="divBod">
-            <TopNav />
+            {/* <TopNav /> */}
+            <TopNavBlank />
 
             <div id="littleBox" className="card mb-3">
             

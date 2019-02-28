@@ -19,6 +19,9 @@ export default {
   getSubmitions: function(userData) {
     // console.log(userData)
     return axios.get("/api/home", userData);
+  },
+  loginUser: function(userData) {
+    return axios.post("/api/login", userData);
   }
   // // Gets the book with the given id
   // getBook: function(id) {

@@ -43,15 +43,34 @@ class InputBox extends React.Component {
     };
 
     render() {
-        const { submition, isOpen } = this.state;
+        const { isOpen } = this.state;
         return (
 
            
             <div>
 
-                <button type="button" onClick={() => this.setState({ isOpen: true })}>
+                <a href="/myprofile/1"><i id="profilePictureInput" className="faButton fas fa-user icon-cog"></i></a>
+
+                <p id="titleInput" className="navbar-brand">STATEMENT</p>
+
+                {/* <div className="d-flex justify-content-end"> */}
+                <a href="/Home"><i id="homeInput" className="faButtonInput fas fa-home icon-cog"></i></a>
+                <a href="/"><i id="searchInput" className="faButtonInput fas fa-search icon-cog"></i></a>
+                {/* <a href="/"><i id="notifications" className="faButton fas fa-bolt icon-cog"></i></a> */}
+
+                <button id="fa-plusInput" type="button" onClick={() => this.setState({ isOpen: true })}><i className="faButton fas fa-plus icon-cog"></i></button>
+
+
+                {/* </div> */}
+
+
+
+
+
+
+                {/* <button id="plus-signButton" type="button" onClick={() => this.setState({ isOpen: true })}>
                     Open Lightbox
-                </button>
+                </button> */}
 
                 {isOpen && (
                     <Lightbox
